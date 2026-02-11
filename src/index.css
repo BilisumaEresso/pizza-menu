@@ -5,7 +5,12 @@ body{
   justify-content: center;
   display: flex;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px 20px;
-  border-bottom: yellow 5px solid;
+  padding: 30px 30px;
+  border-bottom: yellow 20px solid;
+  box-sizing: border-box;
   
+}
+
+h2,p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

@@ -1,19 +1,16 @@
-const Pizza =(pizzas)=>{
-    const list=pizzas.pizzas
-    return <>
-        <div className="grid gap-3 md:grid-cols-2">
-            {list.map((p)=>(
-                <div className="flex gap-4 m-5">
-                    <img src={p.img} className="h-30" alt={p.name} />
-                    <div>
-                        <h1 className="text-2xl">{p.name}</h1>
-                        <p>{p.desc}</p>
-                        <h1>{p.price}</h1>
-                    </div>
-                </div>
-            ))}
+const Pizza = (props) => {
+  return (
+    <>
+      <div  className="flex gap-4 m-5">
+        <img src={props.p.img} className="h-22" alt={props.p.name} />
+        <div>
+          <h2 className="font-bold">{props.p.name}</h2>
+          <p className="text-sm">{props.p.desc}</p>
+          <h2>{props.p.price}</h2>
         </div>
+      </div>
     </>
-}
+  );
+};
 
-export default Pizza
+export default Pizza;
